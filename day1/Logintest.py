@@ -11,7 +11,7 @@ driver.maximize_window()
 driver.get("http://localhost/index.php?m=user&c=public&a=login")
 
 # 输入用户名
-driver.find_element_by_id("username").send_keys("shiji")
+driver.find_element_by_id("username").send_keys("yll")
 # 输入密码
 driver.find_element_by_id("password").send_keys("888888")
 driver.find_element_by_class_name("login_btn").click()
