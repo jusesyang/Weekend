@@ -19,14 +19,14 @@ class DengLuTest(MyTestCase):
         # 打开登录页面
         driver.get("http://localhost/index.php?m=user&c=public&a=login")
         # 输入用户名
-        driver.find_element_by_id("username").send_keys("shiji")
+        driver.find_element_by_id("username").send_keys("yll")
         # 输入密码
         driver.find_element_by_id("password").send_keys("888888")
         driver.find_element_by_class_name("login_btn").click()
         time.sleep(2)
-        act=driver.find_element_by_link_text("您好 shiji").text
-        self.assertEqual(act,"您好 shiji")
-        print("当前用户名:shiji:,用户密码:888888")
+        act=driver.find_element_by_link_text("您好 yll").text
+        self.assertEqual(act,"您好 yll")
+        print("当前用户名:yll:,用户密码:888888")
 
 if __name__ == '__main__':
     unittest.main()
