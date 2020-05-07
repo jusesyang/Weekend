@@ -13,7 +13,7 @@ class LoginTest(MyTestCase):
     #     # 1.打开网页
     #     self.driver.get("http://localhost/index.php?m=user&c=public&a=login")
     #     # 2.输入用户名
-    #     self.driver.find_element(By.ID,"username").send_keys("shiji")
+    #     self.driver.find_element(By.ID,"username").send_keys("yll")
     #     # 3.输入密码
     #     self.driver.find_element(By.ID,"password").send_keys("888888")
     #     # 4.点击登录按钮
@@ -27,7 +27,7 @@ class LoginTest(MyTestCase):
     def test_login(self):
         lp = LoginPage(self.driver)
         lp.open()
-        lp.input_username("shiji")
+        lp.input_username("yll")
         lp.input_password("888888")
         lp.click_login_btn()
 
