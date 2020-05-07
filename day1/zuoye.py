@@ -13,7 +13,7 @@ driver.execute_script(js)
 # 2.点击登录连接
 driver.find_element_by_link_text("登录").click()
 
-driver.find_element_by_id("username").send_keys("shiji")
+driver.find_element_by_id("username").send_keys("yll")
 
 driver.find_element_by_id("password").send_keys("888888")
 
