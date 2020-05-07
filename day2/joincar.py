@@ -16,7 +16,7 @@ login_link = driver.find_element_by_link_text("登录")
 driver.execute_script("arguments[0].removeAttribute('target')", login_link)
 login_link.click()
 
-driver.find_element_by_id("username").send_keys("shiji")
+driver.find_element_by_id("username").send_keys("yll")
 driver.find_element_by_id("password").send_keys("888888")
 driver.find_element_by_id("password").submit()  # 不建议使用
 # submit()用于提交from表单,form是html中的一个元素
